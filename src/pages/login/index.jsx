@@ -1,3 +1,5 @@
+import React, {useState} from 'react'
+
 import './styles.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { FaFacebookSquare, FaGoogle, FaTwitter } from "react-icons/fa";
@@ -6,7 +8,21 @@ import { FaFacebookSquare, FaGoogle, FaTwitter } from "react-icons/fa";
 import OrderDelivered from '../../assets/img/order-delivered.svg'
 import Logo from '../../assets/img/logo.png'
 
+//toast
+import { useToasts } from 'react-toast-notifications';
+
 const Login = () => {
+//   const [email, setName] = useState("")
+//   const [password, setPassword] = useState("")
+
+  const {addToast} = useToasts();
+
+  function confirm(event){
+    event.preventDefault();
+
+    addToast('Olá! Este site não é funcional, e sim apenas uma demonstração.', { appearance: 'warning' });
+  }
+
   return (
     <div className="App">
         <div className="auth-wrapper">
@@ -15,7 +31,7 @@ const Login = () => {
                     <img src={OrderDelivered} alt="Ícone representando uma entrega" />
                 </div>
                 <div className="form">
-                    <form>
+                    <form onSubmit={event => confirm(event)}>
                         <div className="login-title">
                             <img src={Logo} alt="Logo da Da Horta Pra Porta" />
                         </div>
@@ -52,7 +68,7 @@ const Login = () => {
                         <div className="form-group">
                             <div className="custom-checkbox">
                                 <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                                <label className="custom-control-label" htmlFor="customCheck1">Lembre de mim</label>
                             </div>
                         </div>
 

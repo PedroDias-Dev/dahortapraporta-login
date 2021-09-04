@@ -4,9 +4,13 @@ import './index.css';
 import Login from './pages/login/index';
 import reportWebVitals from './reportWebVitals';
 
+import {ToastProvider} from 'react-toast-notifications'
+
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <ToastProvider>
+      <Login />
+    </ToastProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
