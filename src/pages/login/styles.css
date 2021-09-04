@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+.auth-inner{
+    display: flex;
+    height: 70%;
+    width: 1100px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.form{
+    width: 400px;
+}
+
+.form img{
+    width: 130px;
+}
+
+.login-title{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.login-title h3{
+    padding-bottom: 0;
+}
+
+.login-options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login-options a{
+    text-decoration: none;
+}
+
+.login-options div{
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s;
+}
+
+.login-options div:hover{
+    color: #535353;
+    transform: translateY(-2px);
+    transition: 0.4s ease;
+}
+
+.login-options label{
+    font-family: Poppins,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.social-icon{
+    margin-right: 13px;
+}
+
+.google-div{
+    background-color: #34A853;
+}
+
+.facebook-div{
+    background-color: #4867AA;
+}
+
+.twitter-div{
+    background-color: #2AA9E0;
+}
+
+.form-control-input{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 1rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    margin-top: 20px;
+}
+
+.form-control-input:focus, input:focus{
+    outline: none;
+}
+
+.custom-checkbox{
+    margin-top: 10px;
+}
+
+.custom-checkbox label{
+    font-family: Poppins,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+
+.btn-primary{
+    background: #04943c !important;
+    font-family: Poppins,Helvetica,Arial,sans-serif;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.btn-primary:hover{
+    background: #026925 !important;
+}
+
+.icon{
+    display: inline;
+    justify-content: center;
+}
+
+.icon img{
+    width: 350px;
+}
+
+.icon p{
+    margin-top: 10px;
+    font-family: Poppins,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px){
+    .auth-wrapper{
+        min-height: 100vh;
+        align-items: flex-end;
+    }
+
+    .auth-inner{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 300px;
+        border-radius: 15px
+    }
+
+    .form{
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form img{
+        top: 60px;
+        position: absolute;
+    }
+
+    .form-control-input{
+        width: 70%;
+    
+        margin-top: 20px;
+    }
+
+    .icon img{
+        display: none;
+    }
+}
