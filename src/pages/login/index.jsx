@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import './styles.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -12,9 +12,6 @@ import Logo from '../../assets/img/logo.png'
 import { useToasts } from 'react-toast-notifications';
 
 const Login = () => {
-//   const [email, setName] = useState("")
-//   const [password, setPassword] = useState("")
-
   const {addToast} = useToasts();
 
   function confirm(event){
