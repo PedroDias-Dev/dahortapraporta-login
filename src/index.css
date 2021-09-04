@@ -96,11 +96,7 @@ body, html, .App, #root, .auth-wrapper {
   }
 
   body{
-    background: #003322 url('./assets/img/background.svg') no-repeat fixed center;
-    background-size: contain;
-  }
-
-  body:visited {
-    transform: scaleY(-1);
+    background: #003322 url('./assets/img/background.svg') no-repeat fixed bottom;
+    background-size: 1000px;
   }
 }
