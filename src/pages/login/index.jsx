@@ -24,15 +24,16 @@ const Login = () => {
     <div className="App">
         <div className="auth-wrapper">
             <div className="auth-inner">
-                <div className="icon">
-                    <img src={OrderDelivered} alt="Ícone representando uma entrega" />
+                <div>
+                    <div className="icon">
+                        <img src={OrderDelivered} alt="Ícone representando uma entrega" />
+                    </div>
                 </div>
                 <div className="form">
                     <form onSubmit={event => confirm(event)}>
                         <div className="login-title">
                             <img src={Logo} alt="Logo da Da Horta Pra Porta" />
                         </div>
-
                         <div className="login-options">
                             <a href="/">
                                 <div className="google-div">

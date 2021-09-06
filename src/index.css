@@ -34,7 +34,7 @@ body, html, .App, #root, .auth-wrapper {
   height: 100%;
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1024px){
   * {
     margin: 0;
     padding: 0;
