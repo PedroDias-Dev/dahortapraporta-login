@@ -76,6 +76,11 @@
     transition: 0.4s ease;
 }
 
+.login-options label{
+    font-family: Poppins,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
 .social-icon{
     margin-right: 13px;
 }
@@ -189,7 +194,7 @@
     }
 
     .form{
-        width: 80%;
+        width: 85%;
         padding: 0 10px;
         justify-content: center;
         align-items: center;
