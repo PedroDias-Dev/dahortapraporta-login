@@ -12,9 +12,6 @@ code {
     monospace;
 }
 
-* {
-  box-sizing: border-box;
-}
 body {
   background: #04943c;
   background: #003322 url('./assets/img/background.svg') top repeat-x;
